@@ -18,7 +18,7 @@ The following items are required:
 
 1. Clone the repository to your local machine
 2. Install the required dependencies by running: `pip3 install -r requirements.txt`
-3. Get an API key from OpenAI and place it in `config.py`
+3. Get an API key from OpenAI and place it in `config.py` or set your `OPENAI_API_KEY` environment variable
 4. Start the Flask server by running: `flask run --port 50001`
 5. Access the application by opening a browser and navigating to http://localhost:50001
 
@@ -38,6 +38,12 @@ This file contains the Flask application code. It defines the routes and handles
 This file stores your API key.
 
 > You can add the `config.py` file to your `.gitignore` file to prevent accidentally committing your key to git.
+
+#### Alternative: Use the environment variable
+
+> An environment variable is a variable that is set on your operating system, rather than within your application. It consists of a name and value. We recommend that you set the name of the variable to `OPENAI_API_KEY`. By keeping this variable name consistent across your team, you can commit and share your code without the risk of exposing your API key.
+
+OpenAI provides a detailed page on [API key safety](https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety).
 
 ### index.html
 

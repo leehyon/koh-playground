@@ -9,7 +9,7 @@ Last updated: 2023-12-15
 # Import Flask and OpenAI 
 from flask import Flask, request, render_template
 from openai import OpenAI  
-import config
+# import config
 import logging
 
 app = Flask(__name__)
@@ -26,7 +26,9 @@ TEMPERATURE = 0.5
 chat_history = []
 
 # Initialize API client
-openai = OpenAI(api_key=config.OPENAI_API_KEY)
+# openai = OpenAI(api_key=config.OPENAI_API_KEY)
+# openai will automatically look for an environment variable named OPENAI_API_KEY.
+openai = OpenAI()
 
 @app.route("/")
 def index():
