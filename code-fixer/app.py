@@ -8,7 +8,7 @@ Last modified: 2023-12-16
 
 from flask import Flask, render_template, request
 from openai import OpenAI
-import config
+# import config
 
 app = Flask(__name__)
 
@@ -17,7 +17,8 @@ MAX_TOKENS = 1024
 TEMPERATURE = 0.5 
 
 # Initialize OpenAI client
-openai = OpenAI(api_key=config.OPENAI_API_KEY)
+# openai = OpenAI(api_key=config.OPENAI_API_KEY)
+openai = OpenAI()
 
 @app.route("/", methods=["GET", "POST"])
 def index():

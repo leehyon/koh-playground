@@ -15,7 +15,7 @@ The following items are required:
 
 1. Clone the repository to your local machine
 2. Install the required dependencies by running: `pip3 install -r requirements.txt`
-3. Get an API key from OpenAI and place it in `config.py`
+3. Get an API key from OpenAI and place it in `config.py` or set your `OPENAI_API_KEY` environment variable
 4. Start the Flask server by running: `flask run --port 50001`
 5. Access the application by opening a browser and navigating to http://localhost:50001
 
